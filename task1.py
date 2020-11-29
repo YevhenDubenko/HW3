@@ -1,6 +1,9 @@
-phone_number = input("Enter your phone number for verification:")
-x = len(phone_number)
-if phone_number.isdigit() and x == 10:
-    print("Good boy,thank you ☺ ")
+my_string = input("Enter something:")
+x = len(my_string)
+if x > 2:
+    First_lust = my_string[:2] + my_string[-2:]
+    print(First_lust)
+elif x < 2:
+    print("Very few signs, baby")
 else:
-    print("Please check the number of entered characters(phone number must be 10 digits)")
+    print(my_string * 2)
